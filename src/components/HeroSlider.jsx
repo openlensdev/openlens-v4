@@ -1,50 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 
-// const slides = [
-//   { 
-//     img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&q=80', 
-//     pos: 'center', 
-//     title: ['Digital', 'Marketing.'], 
-//     color: 'text-green-400', 
-//     sub: 'Data-Driven SEO, Paid Ads & High-Converting Campaigns.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1661160094555-a798a7df499f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
-//     pos: 'center 20%', 
-//     title: ['Social Media', 'Management.'], 
-//     color: 'text-blue-400', 
-//     sub: 'Viral Strategies, Community Growth & Influencer Partnerships.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=80', 
-//     pos: 'center 25%', 
-//     title: ['Public', 'Relations.'], 
-//     color: 'text-purple-400', 
-//     sub: 'Strategic Communications, Media Placement & Brand Reputation.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1920&q=80', 
-//     pos: 'center', 
-//     title: ['Branding', '& Creative.'], 
-//     color: 'text-orange-400', 
-//     sub: 'Striking Visual Identities, UI/UX & Compelling Storytelling.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1681164315014-06bf36b2597a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
-//     pos: 'center', 
-//     title: ['Complete', 'Tech Support.'], 
-//     color: 'text-cyan-400', 
-//     sub: '24/7 IT Infrastructure, Cloud Management & Enterprise Solutions.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80', 
-//     pos: 'center 30%', 
-//     title: ['Web & App', 'Development.'], 
-//     color: 'text-[#e81c7e]', 
-//     sub: 'Next-Gen Mobile Apps & Scalable Web Architectures.' 
-//   }
-// ];
 
 const slides = [
   {
@@ -54,6 +10,20 @@ const slides = [
     color: 'text-emerald-600',
     sub: 'Data-Driven SEO, Paid Ads & High-Converting Campaigns.'
   },
+  {
+    img: 'https://images.unsplash.com/photo-1681164315014-06bf36b2597a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    pos: 'center',
+    title: ['Complete', 'Tech Support.'],
+    color: 'text-cyan-700',
+    sub: '24/7 IT Infrastructure, Cloud Management & Enterprise Solutions.'
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80',
+    pos: 'center 30%',
+    title: ['Web & App', 'Development.'],
+    color: 'text-[#c01463]',
+    sub: 'Next-Gen Mobile Apps & Scalable Web Architectures.'
+  }
   {
     img: 'https://images.unsplash.com/photo-1661160094555-a798a7df499f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     pos: 'center 20%',
@@ -75,20 +45,6 @@ const slides = [
     color: 'text-orange-700',
     sub: 'Striking Visual Identities, UI/UX & Compelling Storytelling.'
   },
-  {
-    img: 'https://images.unsplash.com/photo-1681164315014-06bf36b2597a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    pos: 'center',
-    title: ['Complete', 'Tech Support.'],
-    color: 'text-cyan-700',
-    sub: '24/7 IT Infrastructure, Cloud Management & Enterprise Solutions.'
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80',
-    pos: 'center 30%',
-    title: ['Web & App', 'Development.'],
-    color: 'text-[#c01463]',
-    sub: 'Next-Gen Mobile Apps & Scalable Web Architectures.'
-  }
 ];
 
 
