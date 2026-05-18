@@ -376,7 +376,7 @@ export default function Navbar({ dark, setDark }) {
     dark ? 'text-green-300 hover:bg-gray-800' : 'text-green-700 hover:bg-green-50'
   }`}
 >
-  WhatsApp: +91 92893 71311
+  WhatsApp: +91 +91 827 108 4686
 </a>
 
 {/*  */}
