@@ -1,51 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 
-// const slides = [
-//   { 
-//     img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&q=80', 
-//     pos: 'center', 
-//     title: ['Digital', 'Marketing.'], 
-//     color: 'text-green-400', 
-//     sub: 'Data-Driven SEO, Paid Ads & High-Converting Campaigns.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1661160094555-a798a7df499f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
-//     pos: 'center 20%', 
-//     title: ['Social Media', 'Management.'], 
-//     color: 'text-blue-400', 
-//     sub: 'Viral Strategies, Community Growth & Influencer Partnerships.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=80', 
-//     pos: 'center 25%', 
-//     title: ['Public', 'Relations.'], 
-//     color: 'text-purple-400', 
-//     sub: 'Strategic Communications, Media Placement & Brand Reputation.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1920&q=80', 
-//     pos: 'center', 
-//     title: ['Branding', '& Creative.'], 
-//     color: 'text-orange-400', 
-//     sub: 'Striking Visual Identities, UI/UX & Compelling Storytelling.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1681164315014-06bf36b2597a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
-//     pos: 'center', 
-//     title: ['Complete', 'Tech Support.'], 
-//     color: 'text-cyan-400', 
-//     sub: '24/7 IT Infrastructure, Cloud Management & Enterprise Solutions.' 
-//   },
-//   { 
-//     img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80', 
-//     pos: 'center 30%', 
-//     title: ['Web & App', 'Development.'], 
-//     color: 'text-[#e81c7e]', 
-//     sub: 'Next-Gen Mobile Apps & Scalable Web Architectures.' 
-//   }
-// ];
-
 const slides = [
   {
     img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1920&q=80',
@@ -164,10 +119,7 @@ export default function HeroSlider({ dark }) {
               <div className={`absolute inset-0 ${dark ? 'bg-gradient-to-b from-black/70 via-black/50 to-black/85' : 'bg-gradient-to-b from-black/45 via-black/30 to-black/65'}`} />
               <div className="relative z-10 h-full flex items-center justify-center px-4 text-center pt-20">
                 <div className="overflow-hidden">
-                  {/* <h1 className="font-black leading-[0.85] tracking-[-0.02em] text-[clamp(2.5rem,10vw,7.5rem)] text-white">
-                    <span className="block split-text">{s.title[0]}</span>
-                    <span className={`block split-text ${s.color}`}>{s.title[1]}</span>
-                  </h1> */}
+                
                   <h1
                     className="font-black leading-[0.85] tracking-[-0.02em] text-[clamp(2.5rem,10vw,7.5rem)] text-white drop-shadow-[0_8px_26px_rgba(0,0,0,0.75)]"
                     style={{ WebkitTextStroke: '1px rgba(0,0,0,0.35)' }}
