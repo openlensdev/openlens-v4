@@ -309,7 +309,7 @@ export default function Navbar({ dark, setDark }) {
           </button>
 
           <a
-            href="https://wa.me/919289371311"
+            href="https://wa.me/+91 827 108 4686"
             target="_blank"
             rel="noreferrer"
             className={`hidden lg:flex items-center gap-2 px-3 py-2 rounded-lg border text-sm font-semibold transition ${dark
@@ -369,7 +369,7 @@ export default function Navbar({ dark, setDark }) {
 
 {/* mobile */}
 <a
-  href="https://wa.me/919289371311"
+  href="https://wa.me/+91 827 108 4686"
   target="_blank"
   rel="noreferrer"
   className={`block w-full px-3 py-2.5 rounded-lg text-[14px] font-semibold ${
